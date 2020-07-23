@@ -62,14 +62,10 @@ def processRequest(req):
     hoa = parameters.get("hoa")
     tax=parameters.get("tax")
     fire=parameters.get("fire")
-    values = [city, area, rooms, bathroom,\
-                    parkings, floor, animal, furniture,\
-                    hoa, tax, fire]
+    values = [city, area, rooms, bathroom, parkings, floor, animal, furniture, hoa, tax, fire]
     
     #Dumping the data into an array
-    keys = ["city","area","rooms","bathroom","parking spaces",\
-            "floor", "animal","furniture","hoa (R$)",\
-            "property tax (R$)","fire insurance (R$)"]
+    keys = ["city","area","rooms","bathroom","parking spaces","floor", "animal","furniture","hoa (R$)", "property tax (R$)","fire insurance (R$)"]
     
     final_features = dict(zip(keys,values))
     
