@@ -87,7 +87,7 @@ def processRequest(req):
     
     #Returning back the fullfilment text back to DialogFlow
     
-    fulfillmentText= "O valor estimado do seu aluguel é: R$ {:.2f} !".format(prediction)
+    fulfillmentText= "O valor estimado do seu aluguel é: R$ {:.2f} !".format(prediction[0])
     
     #log.write_log(sessionID, "Bot Says: "+fulfillmentText)
     return {"fulfillmentText": fulfillmentText}
