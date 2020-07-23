@@ -13,7 +13,7 @@ model = pickle.load(open( 'model/house_model.pkl', 'rb' ))
 # instanciate flask
 app = Flask(__name__)
 
-@app.route('/predict', methods=['POST'])
+@app.route('/webhook', methods=['POST'])
 @cross_origin()
 
 
