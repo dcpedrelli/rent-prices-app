@@ -17,3 +17,4 @@ sklearn==0.0
 Werkzeug==1.0.1
 gunicorn==19.9.0
 requests==2.22.0
+json5==0.9.1
